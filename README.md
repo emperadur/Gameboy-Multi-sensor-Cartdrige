@@ -4,14 +4,22 @@ A gameboy cartridge that can be used as a home multi-sensor or taken with you on
 # Parts Needed & Construction
 
 
+![R7](https://github.com/emperadur/Gamebooy-Multi-sensor-Cartdrige/blob/main/Images/R7.png)
 
+R7 is a pull-down resistor on the RESET line. Leave it unpopulated unless troubleshooting flashing/booting issues.
+
+![R11](https://github.com/emperadur/Gamebooy-Multi-sensor-Cartdrige/blob/main/Images/R11.png)
+
+![R12](https://github.com/emperadur/Gamebooy-Multi-sensor-Cartdrige/blob/main/Images/R12.png)
+
+R12 is the resistor that will supply the diagnostic green LED. If you wish to change the color of the LED, you can use [this calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-led-series-resistor) to determine the correct resistor to place here. The supply voltage going to the LED is 5V.
 
 # Auduino Flashing
 
 The heart of this flash cart is an Atmega32U-MU microcontroller. The board has been designed with a USB-C port to make flashing the microcontroller easy. First, you will need to download and install the [Arduino IDE](https://docs.arduino.cc/software/ide/).
 
 # Links to Digikey/Mouser Cart Orders
-[Digikey order](https://www.digikey.com/short/mhdbv30d)
+[Digikey order](https://www.digikey.com/short/2hrqw8v4)
 # Sensors
 The board utilizes two sensors (BME680 & HMC5883L) that can monitor altitude, barometric pressure, humidity, temperature, and a compass. It also comes with a real-time clock (BQ32000DR). 
 
