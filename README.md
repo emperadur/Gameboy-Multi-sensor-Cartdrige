@@ -1,4 +1,4 @@
-# Gameboy-Multi-sensor-Cartdrige
+# Gameboooy-Multi-sensor-Cartdrige
 A gameboy cartridge that can be used as a home multi-sensor or taken with you on adventures
 
 # Parts Needed & Construction
@@ -27,17 +27,20 @@ The board utilizes two sensors (BME680 & HMC5883L) that can monitor altitude, ba
 
 There are nine test points placed on this cartridge:
 
-- 5V - checks the 5V line from Pin 1 (VCC)
+- 5V - checks the 5V line from the cartridge Pin 1 (VCC)
 - 3.3 V - checks the 3.3V line leaving pin 6 (VOUT) of the 3.3V regulator (MIC5255-3.3)
 - BAT - checks the CR12XX battery voltage
-- SDA - cheks the SDA I<sup>2</sup>C data line. Both the sensor (BME680) & clock (DS13072N+) are connected to the same test point
-- SCL -cheks the SCL I<sup>2</sup>C data line. Both the sensor (BME680) & clock (DS13072N+) are connected to the same test point
+- GND - Ground pad
+- SDA - cheks the SDA I<sup>2</sup>C data line 
+- SCL - cheks the SCL I<sup>2</sup>C data line
+  - Both the sensor (BME680) & clock (DS13072N+) are connected to the same test point, and are post voltage translator (PCA9306DCUR)
+
   
 These 4 pads are useful for soldering to if you want to reporogram the Atmega32u4 following In-Circut Serial Programming (ISP) lines
 - RESET - pad tied to pin 13 (reset). This pad could also be useful in troubleshooting reset functionality either on the atmega32u4 or the gameboy.
-- MISO - Master Input-Slave Output pin 11
-- MOSI - Master Output-Slave Input pin 10
-- SCLK - Serial Clock pin 9
+- MISO - Master Input-Slave Output - pin 11
+- MOSI - Master Output-Slave Input - pin 10
+- SCLK - Serial Clock - pin 9
 
 There is one jumper pad that must be soldered prior to powering on the board.
 
