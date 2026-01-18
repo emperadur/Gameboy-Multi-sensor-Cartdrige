@@ -1,4 +1,4 @@
-# Gameboooy-Multi-sensor-Cartdrige
+# Gameboooy-Multi-sensor-Cartridge
 A gameboy cartridge that can be used as a home multi-sensor or taken with you on adventures
 
 # Parts Needed & Construction
